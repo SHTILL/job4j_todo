@@ -46,6 +46,7 @@ public class TaskTrackerImpl implements TaskTracker {
                 System.err.println("Can't rollback transaction");
                 rbEx.printStackTrace();
             }
+            throw new RuntimeException(e);
         } finally {
             if (s.isOpen())
                 s.close();
