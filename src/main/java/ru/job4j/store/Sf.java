@@ -15,6 +15,6 @@ public class Sf {
     }
 
     public static Session getSession() {
-        return sf.getCurrentSession();
+        return sf.openSession();
     }
 }

@@ -12,5 +12,6 @@
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="hibernate.transaction.coordinator_class">jdbc</property>
     </session-factory>
 </hibernate-configuration>
